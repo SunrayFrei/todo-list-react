@@ -1,13 +1,18 @@
 import Field from "./Field"
 
-const SearchTaskForm = () => {
+const SearchTaskForm = (props) => {
+  const {
+    onSearchInput,
+  } = props
+
   return (
     <form className="todo__form">
-      <Field 
-        className="todo__field" 
-        id="search-task" 
-        label="Search task" 
+      <Field
+        className="todo__field"
+        id="search-task"
+        label="Search task"
         type="search"
+        onInput={(event) => onSearchInput(event.target.value)}
       />
     </form>
   )
