@@ -40,7 +40,7 @@ const Todo = () => {
     console.log(`Search term: ${searchTerm}`)
   }
 
-  const addTask = (taskTitle) => {
+  const addTask = () => {
     if (newTaskTitle.trim().length > 0) {
       const newTask = {
         id: `task-${tasks.length + 1}`,
