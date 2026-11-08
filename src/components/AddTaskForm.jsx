@@ -23,6 +23,7 @@ const AddTaskForm = (props) => {
         label="New task title"
         value={newTaskTitle}
         onInput={(event) => setNewTaskTitle(event.target.value)}
+        autoFocus
       />
       <Button type="submit">Add</Button>
     </form>

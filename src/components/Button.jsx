@@ -1,4 +1,4 @@
-const Button =(props) => {
+const Button = (props) => {
   const {
     className = '',
     type = 'button',
@@ -6,7 +6,7 @@ const Button =(props) => {
   } = props
 
   return (
-    <button 
+    <button
       className={`button ${className}`}
       type={type}
     >
