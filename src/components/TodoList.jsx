@@ -6,6 +6,8 @@ const TodoList = (props) => {
     filteredTasks,
     onDeleteTaskButtonClick,
     onToggleTaskDoneChange,
+    firstIncompleteTaskRef,
+    firstIncompleteTaskId,
   } = props
 
   const hasTasks = tasks.length > 0
@@ -25,6 +27,7 @@ const TodoList = (props) => {
         <TodoItem
           classname="todo__item"
           key={task.id}
+          ref={task.id === firstIncompleteTaskId ? firstIncompleteTaskRef : null}
           onDeleteButtonClick={onDeleteTaskButtonClick}
           onToggleTaskDoneChange={onToggleTaskDoneChange}
           {...task}

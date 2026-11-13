@@ -6,12 +6,11 @@ const AddTaskForm = (props) => {
     addTask,
     newTaskTitle,
     setNewTaskTitle,
+    newTaskInputRef,
   } = props
 
   const onSubmit = (event) => {
     event.preventDefault()
-    // const formData = new FormData(event.target)
-    // const taskTitle = formData.get("new-task")
     addTask()
   }
 
@@ -23,6 +22,7 @@ const AddTaskForm = (props) => {
         label="New task title"
         value={newTaskTitle}
         onInput={(event) => setNewTaskTitle(event.target.value)}
+        ref={newTaskInputRef}
         autoFocus
       />
       <Button type="submit">Add</Button>
