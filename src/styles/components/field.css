@@ -12,7 +12,7 @@
   position: absolute;
   top: 50%;
   left: 17px;
-  color: var(--color-gray-3);
+  color: var(--color-text);
   translate: 0 -50%;
 }
 
@@ -23,17 +23,18 @@
   width: 100%;
   height: var(--input-height);
   padding-inline: var(--fieldInputPaddingX);
-  background-color: transparent;
+  background-color: var(--color-surface-light);
+  color: var(--color-text);
   border: var(--border);
   border-radius: var(--border-radius);
 
   &:hover,
   &:focus {
-    border-color: var(--color-dark-2);
+    border-color: var(--color-gold);
   }
 
   &:focus {
-    background-color: var(--color-gray-1);
+    background-color: var(--color-surface-light);
     outline: none;
   }
 

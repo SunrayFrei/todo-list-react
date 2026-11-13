@@ -6,9 +6,10 @@
   max-width: 404px;
   min-height: 429px;
   padding: 24px;
-  background-color: var(--color-white);
-  border: var(--border);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
+  color: var(--color-text);
   box-shadow: var(--box-shadow);
 }
 
@@ -17,6 +18,7 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
+  color: var(--color-gold);
 }
 
 .todo__form {
@@ -39,10 +41,11 @@
 .todo__delete-all-button {
   padding: 0;
   background-color: transparent;
+  color: var(--color-text);
   border: none;
 
   &:hover {
-    color: var(--color-gray-4);
+    color: var(--color-gold-light);
   }
 
 }
