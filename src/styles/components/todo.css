@@ -66,5 +66,5 @@
 
 .todo__empty-message {
   text-align: center;
-  color: var(--color-gray-4);
+  color: var(--color-text-muted);
 }
